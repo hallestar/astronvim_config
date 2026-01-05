@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -43,8 +43,20 @@ return {
         relativenumber = true, -- sets vim.opt.relativenumber
         number = true, -- sets vim.opt.number
         spell = false, -- sets vim.opt.spell
-        signcolumn = "yes", -- sets vim.opt.signcolumn to yes
+        -- signcolumn = "yes", -- sets vim.opt.signcolumn to yes
         wrap = false, -- sets vim.opt.wrap
+        signcolumn = "auto",   -- sets vim.opt.signcolumn to auto
+        mouse = "",            -- 禁用鼠标功能
+        fileencodings = "utf-8,ucs-bom,bg18030,gbk,gb2313,cp936",
+        encoding = "utf-8",
+        colorcolumn="80",
+        autoindent = true,
+        cindent = true,
+        tabstop = 4,
+        softtabstop = 4,
+        shiftwidth = 4,
+        expandtab = true,
+
       },
       g = { -- vim.g.<key>
         -- configure global vim variables (vim.g)
